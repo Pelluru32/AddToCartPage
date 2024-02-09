@@ -1,0 +1,129 @@
+body {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+.styled-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ff6b82;
+  margin: 20px 0;
+  position: relative;
+}
+
+.styled-heading:before,
+.styled-heading:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  background-color: #c8c8c8;
+}
+
+.styled-heading:before {
+  left: 0;
+}
+
+.styled-heading:after {
+  right: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.card2Most {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  margin: 0;
+  padding: 6px;
+  background: #ff6b82;
+  color: aliceblue;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card #title,
+.card #price {
+  font-size: 20x;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card #dsprice {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.card #discount {
+  background-color: #ff6b82;
+  padding: 5px;
+  color: aliceblue;
+}
+
+#delivery {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6b82;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  width: inherit;
+  padding: 10px;
+  background-color: #ff6b82;
+  color: aliceblue;
+  border-radius: 8px;
+  border: none;
+}
+
+.sizecolor-container {
+  padding-left: 40px;
+}
+
+.card.selected {
+  border: 2px solid #ff6b82;
+}
